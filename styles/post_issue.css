@@ -1,0 +1,542 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f5f5f5;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logo-icon {
+  font-size: 28px;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #666666;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0066cc;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-login {
+  background: none;
+  border: 1px solid #333333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #333333;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #333333;
+  border: 1px solid #333333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #333333;
+  color: white;
+}
+
+/* Report Section */
+.report-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 14px 20px;
+}
+
+.report-container h1 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+.privacy-box {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: rgb(248, 249, 250);
+  border: 1px solid rgb(224, 224, 224);
+  width: 1160px;
+  margin-right: 30px;
+}
+
+.privacy-box p {
+  padding-left: 30px;
+}
+
+.privacy-box h1 {
+  padding-left: 30px;
+}
+
+.report-form {
+  padding: 40px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 10px;
+  margin-bottom: 30px;
+}
+
+.report-form h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.report-form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333333;
+}
+
+#category {
+  margin-bottom: 15px;
+}
+
+.report-form select,
+.report-form textarea,
+.report-form input[type="file"] {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px 15px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+}
+
+textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+.char-count {
+  text-align: right;
+  color: gray;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.file-upload {
+  border: 2px dashed #d0d0d0;
+  text-align: center;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+  height: 220px;
+}
+
+.file-upload:hover {
+  border-color: #999999;
+  background-color: #f5f5f5;
+}
+
+.anonymous-option {
+  margin-top: 20px;
+}
+
+.guidelines {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.guidelines ul {
+  margin-left: 25px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  flex: 1;
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #5a6268;
+}
+
+.cancel-btn {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 30px;
+  border-radius: 8px;
+  background-color: white;
+  color: #333333;
+  border: 1px solid #d0d0d0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #f5f5f5;
+}
+
+/* Help Section */
+.help-section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 60px;
+}
+
+.help-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding: 60px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h4 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: white;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  color: #999;
+  font-size: 14px;
+}
+
+/* ...existing code... */
+
+/* Responsive: large tablets / small desktops */
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding: 0 16px;
+  }
+
+  .header-content {
+    gap: 20px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+
+  .privacy-box {
+    width: auto;
+    margin-right: 0;
+    padding: 16px;
+  }
+
+  .report-container {
+    margin: 30px 12px;
+    padding: 12px;
+  }
+
+  .file-upload {
+    height: 200px;
+  }
+}
+
+/* Responsive: tablets and large phones */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 0;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .logo-icon {
+    font-size: 22px;
+  }
+
+  .nav {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .header-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .privacy-box {
+    width: 100%;
+    margin: 0 0 18px 0;
+    padding: 14px;
+  }
+
+  .privacy-box p,
+  .privacy-box h1 {
+    padding-left: 16px;
+  }
+
+  .report-form {
+    padding: 20px;
+  }
+
+  .report-form select,
+  .report-form textarea,
+  .report-form input[type="file"] {
+    font-size: 14px;
+  }
+
+  textarea {
+    min-height: 120px;
+  }
+
+  .file-upload {
+    padding: 24px;
+    height: auto;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .submit-btn,
+  .cancel-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .cancel-btn {
+    padding: 12px;
+  }
+
+  .help-section {
+    padding: 20px;
+  }
+
+  .footer-grid {
+    gap: 28px;
+  }
+}
+
+/* Responsive: phones */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .header {
+    padding: 8px 0;
+  }
+
+  .header-content {
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .logo-icon {
+    font-size: 20px;
+  }
+
+  /* hide long nav on very small screens (replace with a hamburger if you add JS) */
+  .nav {
+    display: none;
+  }
+
+  .privacy-box {
+    padding: 12px;
+  }
+
+  .privacy-box p,
+  .privacy-box h1 {
+    padding-left: 12px;
+  }
+
+  .report-container h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .report-form {
+    padding: 14px;
+  }
+
+  textarea {
+    min-height: 100px;
+  }
+
+  .file-upload {
+    padding: 18px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer {
+    padding: 32px 0 20px;
+  }
+}
+
+/* ...existing code... */
