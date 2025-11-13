@@ -81,6 +81,15 @@ body {
   color: white;
 }
 
+.btn-login a{
+    color: #333333;
+    text-decoration: none;
+}
+
+.btn-login a:hover{
+  color: white;
+}
+
 .btn-primary {
   background-color: #0066cc;
   color: white;
@@ -96,6 +105,11 @@ body {
   background-color: #0052a3;
 }
 
+.btn-primary a{
+  color: white;
+  text-decoration: none;
+}
+
 .btn-secondary {
   background-color: transparent;
   color: #333333;
@@ -109,6 +123,15 @@ body {
 
 .btn-secondary:hover {
   background-color: #333333;
+  color: white;
+}
+
+.btn-secondary a{
+    color: #333333;
+    text-decoration: none;
+}
+
+.btn-secondary a:hover{
   color: white;
 }
 
@@ -408,6 +431,11 @@ body {
 
 .btn-primary-light:hover {
   background-color: #f0f0f0;
+}
+
+.btn-primary-light a{
+  color: #0066cc;
+  text-decoration: none;
 }
 
 .btn-secondary-light {
