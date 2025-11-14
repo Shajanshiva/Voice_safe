@@ -338,7 +338,7 @@ textarea {
   font-size: 14px;
 }
 
-/* ---------- Large Tablets (max-width: 992px) ---------- */
+
 @media (max-width: 992px) {
 
   .header-content {
@@ -380,7 +380,7 @@ textarea {
   }
 }
 
-/* ---------- Tablets / Large Phones (max-width: 768px) ---------- */
+
 @media (max-width: 768px) {
 
   .header-content {
@@ -433,7 +433,7 @@ textarea {
   }
 }
 
-/* ---------- Mobile (max-width: 576px) ---------- */
+
 @media (max-width: 576px) {
 
   .nav {

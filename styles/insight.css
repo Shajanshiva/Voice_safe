@@ -263,7 +263,7 @@ body {
 }
 
 
-/* ---------- Tablets (max-width: 992px) ---------- */
+
 @media (max-width: 992px) {
 
   .header-content {
@@ -299,7 +299,7 @@ body {
   }
 }
 
-/* ---------- Tablets & Large Phones (max-width: 768px) ---------- */
+
 @media (max-width: 768px) {
 
   .header-content {
@@ -351,7 +351,7 @@ body {
   }
 }
 
-/* ---------- Phones (max-width: 576px) ---------- */
+
 @media (max-width: 576px) {
 
   .nav {

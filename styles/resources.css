@@ -17,7 +17,7 @@ body {
   padding: 0 20px;
 }
 
-/* Navbar */
+
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #e0e0e0;
@@ -113,7 +113,7 @@ body {
   color: white;
 }
 
-/* Sections */
+
 .section {
     padding: 40px;
 }
@@ -157,7 +157,7 @@ body {
     padding-left: 0px;
 }
 
-/* Tags */
+
 .tag {
     display: inline-block;
     padding: 4px 10px;
@@ -168,7 +168,7 @@ body {
 .emergency-tag { background-color: #FFE4E4; color: #C40000; }
 .workplace-tag { background-color: #D9E7FF; color: #0041C4; }
 .legal-tag { background-color: #E2FFE4; color: #168000; }
-/* Buttons */
+
 .call-btn,
 .secondary-btn {
     width: 100%;
@@ -182,7 +182,7 @@ body {
     color: white;
     margin-top: 15px;
 }
-/* Legal Cards */
+
 .legal-card {
     background: #fff;
     padding: 20px;
@@ -195,7 +195,7 @@ body {
     margin-left: 20px;
 }
 
-/* Footer */
+
 .footer {
   background-color: #1a1a1a;
   color: #ccc;
@@ -257,7 +257,7 @@ body {
   font-size: 14px;
 }
 
-/* Medium Screens (Tablets, < 992px) */
+
 @media (max-width: 992px) {
 
   .header-content {
@@ -288,7 +288,7 @@ body {
   }
 }
 
-/* Tablets & Large Phones (< 768px) */
+
 @media (max-width: 768px) {
 
   .header-content {
@@ -334,7 +334,7 @@ body {
   }
 }
 
-/* Phones (< 576px) */
+
 @media (max-width: 576px) {
 
   .nav {
