@@ -46,14 +46,21 @@
       <form class="report-form" id="issueForm">
         <h2>Anonymous Report Form</h2>
 
+         <label for="title">Title *</label>
+        <textarea
+          id="title"
+          maxlength="30"
+          placeholder="Please provide title about the incident."
+        ></textarea>
+
         <label for="category">Category *</label>
         <select id="category" required>
           <option value="">Select the type of issue you're reporting</option>
-          <option value="1">Harassment</option>
-          <option value="2">Discrimination</option>
-          <option value="3">Favoritism</option>
-          <option value="4">Bullying</option>
-          <option value="5">Other</option>
+          <option value="Harassment">Harassment</option>
+          <option value="Discrimination">Discrimination</option>
+          <option value="Favoritism">Favoritism</option>
+          <option value="Bullying">Bullying</option>
+          <option value="Other">Other</option>
         </select>
 
         <label for="description">Describe your issue *</label>
@@ -144,5 +151,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="../js/post_issue.js"></script>
   </body>
 </html>

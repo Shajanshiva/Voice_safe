@@ -178,6 +178,11 @@ body {
   background-color: #fafafa;
 }
 
+#title {
+  min-height: 15px;
+  resize: none;
+}
+
 textarea {
   min-height: 150px;
   resize: none;
