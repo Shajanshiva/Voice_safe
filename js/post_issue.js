@@ -51,3 +51,15 @@ function submitIssue(event) {
         alert(error.message);
     });
 }   
+
+document.querySelector(".cancel-btn").addEventListener("click", () => {
+    const confirmCancel = confirm("Are you sure you want to cancel?");
+    if (confirmCancel) {
+        window.location.href = "../pages/community.html";
+    }
+});
+
+
+document.getElementById("loginBtn").addEventListener("click", () => {
+    window.location.href = "../pages/login.html";
+});
