@@ -3,9 +3,10 @@ document.querySelector(".report-form").addEventListener("submit", submitIssue);
 function submitIssue(event) {
     event.preventDefault();
 
-    const user_id = localStorage.getItem("user_id");
 
-    if (!user_id) {
+    const token = localStorage.getItem("access_token");
+
+    if (!token) {
         alert("Please log in to submit an issue.");
         window.location.href = "./login.html";
         return;
@@ -20,8 +21,8 @@ function submitIssue(event) {
         return;
     }
 
+  
     const issue_data = {
-        user_id: parseInt(user_id),
         title: title,
         category_name: category,
         description: description
@@ -30,7 +31,8 @@ function submitIssue(event) {
     fetch("http://127.0.0.1:8000/issues/", {
         method: "POST",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Authorization": "Bearer " + token
         },
         body: JSON.stringify(issue_data)
     })
@@ -44,13 +46,14 @@ function submitIssue(event) {
         return data;
     })
     .then((data) => {
-        alert(data.message); 
-        document.getElementById("issueForm").reset();
+        alert(data.message);
+        document.querySelector(".report-form").reset();
     })
     .catch((error) => {
         alert(error.message);
     });
-}   
+}
+
 
 document.querySelector(".cancel-btn").addEventListener("click", () => {
     const confirmCancel = confirm("Are you sure you want to cancel?");
