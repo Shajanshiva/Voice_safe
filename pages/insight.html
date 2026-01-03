@@ -58,7 +58,7 @@
         </div>
       </div>
 
-      <div class="charts">
+      <!-- <div class="charts">
         <div class="chart-card">
           <h3>Issues by Category</h3>
           <canvas id="categoryChart"></canvas>
@@ -78,7 +78,15 @@
           <h3>Trends Over Time</h3>
           <canvas id="trendChart"></canvas>
         </div>
-      </div>
+      </div> -->
+
+
+      <div class="charts">
+  <div class="chart-card">
+    <h3>Issues Distribution by Category</h3>
+    <canvas id="categoryPieChart"></canvas>
+  </div>
+</div>
 
       <div class="summary-cards">
         <div class="summary blue">
@@ -108,7 +116,9 @@
           policymakers address systemic problems more effectively.
         </p>
         <div class="info-buttons">
-          <button class="primary"><a href="../pages/community.html">View Community Stories</a></button>
+          <button class="primary">
+            <a href="../pages/community.html">View Community Stories</a>
+          </button>
           <button>Access Resources</button>
         </div>
       </div>
@@ -159,6 +169,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/insight.js"></script>
   </body>
-  <script src="../js/insight.js"></script>
 </html>
