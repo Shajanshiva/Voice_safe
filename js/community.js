@@ -20,7 +20,6 @@ function loadIssues() {
         <div class="story-header">
             <span class="tag yellow">${issue.category_name}</span>
             <span class="tag light">🔥 Trending</span>
-            <span class="time">2 hours ago</span>
         </div>
 
         <h3>${issue.title}</h3>
@@ -39,7 +38,6 @@ function loadIssues() {
             <span>💬 0</span>
             <span>🤝 Support</span>
             </div>
-            <button class="btn-read">Read More</button>
         </div>
         `;
 
