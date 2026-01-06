@@ -16,7 +16,7 @@ function createUser() {
           password: password,
         };
 
-        fetch("http://127.0.0.1:8000/users/", {
+        fetch(`${API_URL}/users/`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

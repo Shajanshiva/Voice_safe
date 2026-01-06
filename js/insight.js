@@ -10,7 +10,7 @@ async function loadCategoryPieChart() {
     }
 
     const response = await fetch(
-      "http://127.0.0.1:8000/issues/category-count",
+      `${API_URL}/issues/category-count`,
       {
         headers: {
           Authorization: `Bearer ${token}`,

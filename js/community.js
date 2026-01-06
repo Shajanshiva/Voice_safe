@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", loadIssues);
 
 function loadIssues() {
-  fetch("http://127.0.0.1:8000/issues/")
+  fetch(`${API_URL}/issues/`)
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById("storiesContainer");
