@@ -11,35 +11,36 @@ function verify_user(event) {
         return;
     }
 
- 
-    const formData = new URLSearchParams();
-    formData.append("username", email); 
-    formData.append("password", password);
+
+    const loginData = {
+        email: email,
+        password: password
+    };
 
     fetch(`${API_URL}/users/login`, {
         method: "POST",
         headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
+            "Content-Type": "application/json"
         },
-        body: formData.toString()
+        body: JSON.stringify(loginData)
     })
-    .then(async response => {
-        const data = await response.json();
+        .then(async response => {
+            const data = await response.json();
 
-        if (!response.ok) {
-            throw new Error(data.detail || "Invalid email or password");
-        }
+            if (!response.ok) {
+                throw new Error(data.detail || "Invalid email or password");
+            }
 
-        return data;
-    })
-    .then(data => {
-        alert("Login successful!");
+            return data;
+        })
+        .then(data => {
+            alert("Login successful!");
 
-        localStorage.setItem("access_token", data.access_token);
+            localStorage.setItem("access_token", data.access_token);
 
-        window.location.href = "../index.html";
-    })
-    .catch(error => {
-        alert(error.message);
-    });
+            window.location.href = "../index.html";
+        })
+        .catch(error => {
+            alert(error.message);
+        });
 }
