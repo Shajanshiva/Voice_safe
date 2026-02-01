@@ -58,7 +58,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #0066cc;
+  color: #7689d6;
 }
 
 .header-actions {
@@ -91,7 +91,7 @@ body {
 }
 
 .btn-primary {
-  background-color: #0066cc;
+  background-color: #7689d6;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -102,7 +102,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #0052a3;
+  background-color: #8ba0e8;
 }
 
 .btn-primary a{
@@ -305,14 +305,14 @@ body {
 }
 
 .view-all {
-  color: #0066cc;
+  color: #7689d6;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .view-all:hover {
-  color: #0052a3;
+  color: #8ba0e8;
 }
 
 .reports-grid {
@@ -420,22 +420,19 @@ body {
 
 .btn-primary-light {
   background-color: white;
-  color: #0066cc;
+  color: #000000;
   border: none;
   padding: 14px 30px;
   border-radius: 5px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-primary-light:hover {
-  background-color: #f0f0f0;
-}
-
-.btn-primary-light a{
-  color: #0066cc;
-  text-decoration: none;
+  background-color: #000000;
+  color: white;
 }
 
 .btn-secondary-light {

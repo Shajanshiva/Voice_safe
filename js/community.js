@@ -5,61 +5,42 @@ function loadIssues() {
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById("storiesContainer");
+      if (!container) return;
+
       container.innerHTML = "";
 
       if (data.length === 0) {
-        container.innerHTML = "<p>No issues reported yet.</p>";
+        container.innerHTML = "<p>No issues reported yet. Be the first to share your story!</p>";
         return;
       }
 
-      data.forEach(issue => {
+      // Reverse data to show latest posts first
+      data.reverse().forEach(issue => {
         const storyDiv = document.createElement("div");
-        storyDiv.className = "story";
+
+        // Map category name to CSS class for gradient headers
+        const category = issue.category_name ? issue.category_name.toLowerCase().replace(/\s+/g, '-') : 'default';
+        const catClass = `cat-${category}`;
+        storyDiv.className = `story ${catClass}`;
 
         storyDiv.innerHTML = `
-        <div class="story-header">
-            <span class="tag yellow">${issue.category_name}</span>
-            <span class="tag light">🔥 Trending</span>
-        </div>
-
-        <h3>${issue.title}</h3>
-
-        <p>${issue.description.substring(0, 2000)}...</p>
-
-        <div class="tags">
-            <span>#workplace</span>
-            <span>#anonymous</span>
-            <span>#support</span>
-        </div>
-
-        <div class="story-footer">
-            <div class="actions">
-            <span>👍 0</span>
-            <span>💬 0</span>
-            <span>🤝 Support</span>
-            </div>
-        </div>
-        `;
+                <div class="story-header">
+                    <span class="category-label">${issue.category_name || 'Issue'}</span>
+                    <h3>${issue.title}</h3>
+                </div>
+                <div class="story-body">
+                    <p>${issue.description}</p>
+                </div>
+            `;
 
         container.appendChild(storyDiv);
       });
     })
     .catch(error => {
       console.error("Error loading issues:", error);
+      const container = document.getElementById("storiesContainer");
+      if (container) {
+        container.innerHTML = "<p>Failed to load stories. Please try again later.</p>";
+      }
     });
 }
-
-document.getElementById("loginBtn").addEventListener("click", () => {
-    window.location.href = "../pages/login.html";
-});
-
-document.getElementById("postIssueBtn").addEventListener("click", () => {
-    const userId = localStorage.getItem("user_id");
-
-    if (!userId) {
-        alert("Please login to post an issue.");
-        window.location.href = "../pages/login.html";
-    } else {
-        window.location.href = "../pages/post_issue.html";
-    }
-});

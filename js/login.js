@@ -37,6 +37,7 @@ function verify_user(event) {
             alert("Login successful!");
 
             localStorage.setItem("access_token", data.access_token);
+            localStorage.setItem("user_id", data.user_id);
 
             window.location.href = "../index.html";
         })

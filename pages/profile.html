@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoiceSafe - My Profile</title>
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/profile.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <span class="logo-text">VoiceSafe</span>
+                </a>
+                <nav class="nav">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../pages/post_issue.html" class="nav-link">Post Issue</a>
+                    <a href="../pages/community.html" class="nav-link">Community</a>
+                    <a href="../pages/resources.html" class="nav-link">Resources</a>
+                    <a href="../pages/insight.html" class="nav-link">Insights</a>
+                </nav>
+                <div class="header-actions">
+                    <!-- Handled by auth.js -->
+                    <button class="btn-login" id="loginBtn">Login</button>
+                    <button class="btn-primary" id="postIssueBtn">Post Issue</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="profile-hero">
+        <div class="container">
+            <div class="welcome-overlay">
+                <div class="welcome-card">
+                    <h1 id="welcomeGreeting">Welcome back!</h1>
+                    <p>Manage your profile and view your contributions to a safer workplace</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="profile-main">
+        <div class="container">
+            <!-- Stats Section -->
+            <div class="stats-row">
+                <div class="stat-card">
+                    <h2 id="totalPostsCount">0</h2>
+                    <p>Total Posts</p>
+                </div>
+            </div>
+
+            <div class="profile-grid">
+                <!-- My Posts Section -->
+                <section class="user-posts-section">
+                    <div class="card-header">
+                        <span class="header-icon">📝</span>
+                        <h2>My Posts</h2>
+                    </div>
+                    <div id="myPostsContainer" class="posts-list">
+                        <p>Loading your posts...</p>
+                    </div>
+                </section>
+
+                <!-- Edit Profile Section -->
+                <section class="profile-edit-card">
+                    <div class="card-header">
+                        <span class="header-icon">👤</span>
+                        <h2>Edit Profile</h2>
+                    </div>
+                    <form id="editProfileForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" placeholder="Enter your full name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Confirm/New Password</label>
+                            <input type="password" id="password" placeholder="Enter new password (optional)" />
+                        </div>
+                        <button type="submit" class="btn-update">Update Profile</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🛡️</span>
+                        <span>VoiceSafe</span>
+                    </div>
+                    <p>Empowering safe workplace reporting for a better tomorrow.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/post_issue.html">Post Issue</a></li>
+                        <li><a href="../pages/community.html">Community</a></li>
+                        <li><a href="../pages/resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Legal Help</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Emergency Support</h4>
+                    <p><strong>Women Helpline:</strong><br />1091</p>
+                    <p><strong>HR Grievance:</strong><br />1800-XXX-XXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VoiceSafe. All rights reserved. | Built for safer workplaces.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/constant.js"></script>
+    <script src="../js/profile.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+
+</html>

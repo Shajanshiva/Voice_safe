@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceSafe - Report Submitted</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/report_submit.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <span class="logo-text">VoiceSafe</span>
+                </a>
+                <nav class="nav">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../pages/post_issue.html" class="nav-link">Post Issue</a>
+                    <a href="../pages/community.html" class="nav-link">Community</a>
+                    <a href="../pages/resources.html" class="nav-link">Resources</a>
+                    <a href="../pages/insight.html" class="nav-link">Insights</a>
+                </nav>
+                <div class="header-actions">
+                    <!-- Handled by auth.js -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="success-container">
+        <div class="success-card">
+            <div class="success-icon-box">
+                <i class="fas fa-check"></i>
+                <span>✓</span>
+            </div>
+            <h2>Report Submitted Successfully!</h2>
+            <p>Thank you for speaking up. Your voice makes our workplace safer. Your report has been submitted
+                anonymously and will be reviewed by the community.</p>
+
+            <div class="success-actions">
+                <a href="../pages/community.html" class="btn-primary">View Community Stories</a>
+                <a href="../index.html" class="btn-secondary">Go to Home</a>
+            </div>
+
+            <p class="redirect-msg">You will be automatically redirected in <span id="countdown">10</span> seconds...
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🛡️</span>
+                        <span class="logo-text">VoiceSafe</span>
+                    </div>
+                    <p>A secure platform for reporting workplace harassment, favoritism, and bias without fear of
+                        retaliation.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VoiceSafe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/auth.js"></script>
+    <script>
+        // Automatic redirection logic
+        let seconds = 10;
+        const countdownEl = document.getElementById('countdown');
+
+        const timer = setInterval(() => {
+            seconds--;
+            countdownEl.textContent = seconds;
+            if (seconds <= 0) {
+                clearInterval(timer);
+                window.location.href = '../pages/community.html';
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>

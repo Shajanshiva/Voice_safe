@@ -1,8 +1,27 @@
-document.querySelector(".report-form").addEventListener("submit", submitIssue);
+// Check if user is logged in immediately on page load
+if (!localStorage.getItem("access_token")) {
+    alert("Please login to access this page.");
+    window.location.href = "login.html";
+}
 
-function submitIssue(event) {
+const form = document.getElementById("issueForm");
+const descriptionInput = document.getElementById("description");
+const charCountDisplay = document.querySelector(".char-count");
+
+if (form) {
+    form.addEventListener("submit", submitIssue);
+}
+
+// Character Count Logic
+if (descriptionInput && charCountDisplay) {
+    descriptionInput.addEventListener("input", () => {
+        const length = descriptionInput.value.length;
+        charCountDisplay.innerText = `${length}/2000 characters`;
+    });
+}
+
+async function submitIssue(event) {
     event.preventDefault();
-
 
     const token = localStorage.getItem("access_token");
 
@@ -14,55 +33,38 @@ function submitIssue(event) {
 
     const title = document.getElementById("title").value.trim();
     const category = document.getElementById("category").value;
-    const description = document.getElementById("description").value.trim();
+    const description = descriptionInput.value.trim();
 
     if (!title || !category || !description) {
         alert("Please fill all required fields");
         return;
     }
 
-  
     const issue_data = {
         title: title,
         category_name: category,
         description: description
     };
 
-    fetch(`${API_URL}/issues/`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": "Bearer " + token
-        },
-        body: JSON.stringify(issue_data)
-    })
-    .then(async (response) => {
+    try {
+        const response = await fetch(`${API_URL}/issues/`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer " + token
+            },
+            body: JSON.stringify(issue_data)
+        });
+
         const data = await response.json();
 
         if (!response.ok) {
             throw new Error(data.detail || "Failed to submit issue");
         }
 
-        return data;
-    })
-    .then((data) => {
-        alert(data.message);
-        document.querySelector(".report-form").reset();
-    })
-    .catch((error) => {
+        // Redirect to success page instead of alert
+        window.location.href = "report_submit.html";
+    } catch (error) {
         alert(error.message);
-    });
-}
-
-
-document.querySelector(".cancel-btn").addEventListener("click", () => {
-    const confirmCancel = confirm("Are you sure you want to cancel?");
-    if (confirmCancel) {
-        window.location.href = "../pages/community.html";
     }
-});
-
-
-document.getElementById("loginBtn").addEventListener("click", () => {
-    window.location.href = "../pages/login.html";
-});
+}
