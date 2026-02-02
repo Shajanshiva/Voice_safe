@@ -331,6 +331,57 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0 100px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 32px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+  }
+
+  .privacy-overlay {
+    position: relative;
+    bottom: 0;
+    transform: none;
+    left: 0;
+    margin-top: -50px;
+    padding: 0 15px;
+  }
+
+  .privacy-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .main-content {
+    padding-top: 40px;
+  }
+
+  .report-form-card {
+    padding: 25px 20px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .submit-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+
+  .emergency-number {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 640px) {
   .hero-section h1 {
     font-size: 32px;

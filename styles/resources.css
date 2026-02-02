@@ -317,28 +317,84 @@
 }
 
 @media (max-width: 768px) {
+  .resource-hero {
+    padding: 60px 0 100px 0;
+    margin-bottom: 20px;
+  }
+
   .resource-hero h1 {
     font-size: 32px;
   }
 
-  .resource-hero {
-    padding-bottom: 160px;
+  .resource-hero p {
+    font-size: 16px;
+  }
+
+  .privacy-overlay {
+    position: relative;
+    bottom: 0;
+    transform: none;
+    left: 0;
+    margin-top: -30px;
+    padding: 0 15px;
   }
 
   .privacy-card {
     flex-direction: column;
     text-align: center;
+    padding: 25px 15px;
+    gap: 15px;
   }
 
-  .cta-banner {
-    padding: 40px 20px;
+  .resource-section {
+    padding: 30px 0;
   }
 
-  .cta-banner h2 {
-    font-size: 30px;
+  .resource-section h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .helpline-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .helpline-card {
+    padding: 30px 20px;
   }
 
   .helpline-number {
     font-size: 32px;
+  }
+
+  .legal-card {
+    padding: 30px 20px;
+  }
+
+  .legal-card h3 {
+    font-size: 22px;
+  }
+
+  .legal-points {
+    grid-template-columns: 1fr;
+  }
+
+  .additional-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-banner {
+    padding: 40px 20px;
+    border-radius: 16px;
+  }
+
+  .cta-banner h2 {
+    font-size: 28px;
+  }
+
+  .cta-banner p {
+    font-size: 16px;
   }
 }

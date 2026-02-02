@@ -294,6 +294,54 @@
   }
 }
 
+@media (max-width: 768px) {
+  .profile-hero {
+    padding: 60px 0 100px 0;
+  }
+
+  .welcome-overlay {
+    position: relative;
+    bottom: 0;
+    transform: none;
+    left: 0;
+    margin-top: -50px;
+    padding: 0 15px;
+  }
+
+  .welcome-card {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .welcome-card h1 {
+    font-size: 28px;
+  }
+
+  .profile-main {
+    padding-top: 40px;
+  }
+
+  .stats-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .stat-card {
+    min-width: auto;
+    padding: 30px;
+  }
+
+  .stat-card h2 {
+    font-size: 42px;
+  }
+
+  .profile-edit-card,
+  .user-posts-section {
+    padding: 25px 20px;
+  }
+}
+
 @media (max-width: 640px) {
   .stats-row {
     grid-template-columns: 1fr;

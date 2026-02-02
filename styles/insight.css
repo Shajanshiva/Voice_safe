@@ -260,30 +260,81 @@
   transform: scale(1.05);
 }
 
+@media (max-width: 992px) {
+  .chart-section {
+    padding: 40px 20px;
+  }
+}
+
 @media (max-width: 768px) {
+  .insight-hero {
+    padding: 60px 0 100px 0;
+  }
+
   .insight-hero h1 {
     font-size: 32px;
+  }
+
+  .insight-hero p {
+    font-size: 16px;
+  }
+
+  .privacy-overlay {
+    position: relative;
+    bottom: 0;
+    transform: none;
+    left: 0;
+    margin-top: -30px;
+    padding: 0 15px;
   }
 
   .privacy-card {
     flex-direction: column;
     text-align: center;
+    padding: 25px 20px;
+    gap: 15px;
+  }
+
+  .insight-main {
+    padding-top: 40px;
   }
 
   .chart-section {
-    padding: 30px;
+    padding: 30px 15px;
+    margin-bottom: 30px;
+  }
+
+  .chart-header h2 {
+    font-size: 24px;
+  }
+
+  .chart-container {
+    height: 300px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
   }
 
   .data-info-card {
     flex-direction: column;
+    padding: 25px 20px;
+    gap: 15px;
+  }
+
+  .info-content h3 {
+    font-size: 22px;
   }
 
   .insight-actions {
     flex-direction: column;
     align-items: stretch;
+    gap: 15px;
   }
 
   .insight-actions a {
     text-align: center;
+    padding: 14px;
   }
 }

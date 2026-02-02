@@ -160,11 +160,16 @@
 }
 
 @media (max-width: 480px) {
+    .auth-page {
+        padding: 20px 15px;
+    }
+
     .auth-card {
-        padding: 35px 25px;
+        padding: 30px 20px;
+        border-radius: 16px;
     }
 
     .auth-header h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
 }
