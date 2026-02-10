@@ -235,6 +235,7 @@
 
 /* Right Column Cards */
 .help-card,
+.help-card-inner,
 .tips-card {
   background: white;
   border-radius: 16px;
@@ -243,7 +244,16 @@
   margin-bottom: 30px;
 }
 
-.help-card h3 {
+.help-card-inner {
+  border-left: 5px solid #fda4af;
+  background-color: #fffafb;
+  box-shadow: none;
+  border: 1px solid #fee2e2;
+  border-left: 5px solid #fda4af;
+}
+
+.help-card h3,
+.help-card-inner h3 {
   font-size: 20px;
   color: #1e293b;
   margin-bottom: 5px;

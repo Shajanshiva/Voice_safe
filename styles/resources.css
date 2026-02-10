@@ -199,6 +199,31 @@
   font-size: 16px;
 }
 
+.legal-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.learn-more-btn {
+  background: #6366f1;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+}
+
+.learn-more-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.25);
+}
+
 .legal-points {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
