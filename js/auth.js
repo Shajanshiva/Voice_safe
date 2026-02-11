@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const authActions = document.querySelector(".header-actions");
     const isSubfolder = window.location.pathname.includes("/pages/");
 
-    // Function to handle "Post Issue" click for both logged in and logged out states
+    
     const handlePostIssueClick = (e) => {
         const userId = localStorage.getItem("user_id");
         if (!userId) {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="${postPath}" class="btn-primary" id="postIssueBtnNav">Post Issue</a>
         `;
 
-        // Logout logic
+
         document.getElementById("logoutBtn").addEventListener("click", () => {
             localStorage.removeItem("access_token");
             localStorage.removeItem("user_id");
@@ -40,13 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
-    // Attach listeners to whatever buttons exist now
+
     document.getElementById("postIssueBtn")?.addEventListener("click", handlePostIssueClick);
     document.getElementById("postIssueBtnNav")?.addEventListener("click", handlePostIssueClick);
 
-    // Login button logic (just in case index.js or others are overwritten)
+
     document.getElementById("loginBtn")?.addEventListener("click", (e) => {
-        // No special check needed, just let the link work or force it
+      
         const loginPath = isSubfolder ? "login.html" : "pages/login.html";
         window.location.href = loginPath;
     });

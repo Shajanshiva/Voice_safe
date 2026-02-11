@@ -1,4 +1,4 @@
-/* Insight Page Styles */
+
 
 .insight-hero {
   background: linear-gradient(135deg, #8ba0e8 0%, #7689d6 100%);
@@ -32,7 +32,7 @@
 
 .privacy-card {
   background: #f1f5ff;
-  /* Light blue tint */
+
   border-radius: 20px;
   padding: 30px 40px;
   display: flex;
@@ -58,14 +58,14 @@
   margin: 0;
 }
 
-/* Main Content */
+
 .insight-main {
   padding-top: 100px;
   padding-bottom: 80px;
   background-color: #f8fafc;
 }
 
-/* Chart Section */
+
 .chart-section {
   background: white;
   border-radius: 24px;
@@ -94,7 +94,7 @@
   margin: 0 auto;
 }
 
-/* Stats Grid */
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -128,7 +128,6 @@
   margin-bottom: 20px;
 }
 
-/* Category Specific Top Borders */
 .harassment {
   border-top-color: #ff4757;
 }
@@ -161,7 +160,6 @@
   margin-bottom: 15px;
 }
 
-/* Category Specific Text Colors */
 .harassment .stat-value {
   color: #ff4757;
 }
@@ -189,10 +187,10 @@
   margin: 0;
 }
 
-/* Data Info Card */
+
 .data-info-card {
   background: #fff8eb;
-  /* Light orange tint */
+
   border-radius: 24px;
   padding: 40px;
   display: flex;
@@ -223,7 +221,7 @@
   margin-bottom: 0;
 }
 
-/* Action Buttons */
+
 .insight-actions {
   display: flex;
   justify-content: center;

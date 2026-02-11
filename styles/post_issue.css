@@ -1,21 +1,19 @@
-/* Post Issue Styles */
 
-/* Hero Section */
 .hero-section {
   background: linear-gradient(135deg, #8ba0e8 0%, #7689d6 100%);
   padding: 80px 0 140px 0;
-  /* extra bottom space */
+
   text-align: center;
   color: white;
   position: relative;
-  /* important */
+
 }
 
 .privacy-overlay {
   position: absolute;
   left: 50%;
   bottom: -60px;
-  /* controls overlap depth */
+
   transform: translateX(-50%);
   width: 100%;
   max-width: 1100px;
@@ -36,12 +34,10 @@
 
 .main-content {
   padding-top: 100px;
-  /* space for overlay card */
   padding-bottom: 80px;
   background-color: #f8fafc;
 }
 
-/* Privacy Card */
 .privacy-card {
   background: white;
   border-radius: 16px;
@@ -50,10 +46,8 @@
   align-items: center;
   gap: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-  /* stronger floating effect */
   border-left: 5px solid #4ade80;
   margin-bottom: 0;
-  /* important */
 }
 
 .privacy-icon {
@@ -71,14 +65,12 @@
   font-size: 15px;
 }
 
-/* Layout Grid */
 .layout-grid {
   display: grid;
   grid-template-columns: 1.8fr 1fr;
   gap: 30px;
 }
 
-/* Report Form Card */
 .report-form-card {
   background: white;
   border-radius: 16px;
@@ -152,7 +144,6 @@
   margin-top: 5px;
 }
 
-/* Guidelines Card */
 .guidelines-card {
   background-color: #fffaf0;
   border-radius: 12px;
@@ -195,7 +186,6 @@
   font-weight: bold;
 }
 
-/* Form Buttons */
 .form-buttons {
   display: flex;
   gap: 15px;
@@ -233,7 +223,6 @@
   background-color: #f1f5f9;
 }
 
-/* Right Column Cards */
 .help-card,
 .help-card-inner,
 .tips-card {
@@ -334,7 +323,6 @@
   line-height: 1;
 }
 
-/* Responsive Styles */
 @media (max-width: 992px) {
   .layout-grid {
     grid-template-columns: 1fr;

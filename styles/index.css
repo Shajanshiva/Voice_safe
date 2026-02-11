@@ -511,7 +511,7 @@ body {
   font-size: 14px;
 }
 
-/* Responsive Queries */
+
 @media (max-width: 992px) {
   .hero-text h1 {
     font-size: 42px;

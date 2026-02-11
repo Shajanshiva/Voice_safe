@@ -1,4 +1,4 @@
-// Check if user is logged in immediately on page load
+
 if (!localStorage.getItem("access_token")) {
     alert("Please login to access this page.");
     window.location.href = "login.html";
@@ -12,7 +12,7 @@ if (form) {
     form.addEventListener("submit", submitIssue);
 }
 
-// Character Count Logic
+
 if (descriptionInput && charCountDisplay) {
     descriptionInput.addEventListener("input", () => {
         const length = descriptionInput.value.length;
@@ -62,7 +62,6 @@ async function submitIssue(event) {
             throw new Error(data.detail || "Failed to submit issue");
         }
 
-        // Redirect to success page instead of alert
         window.location.href = "report_submit.html";
     } catch (error) {
         alert(error.message);

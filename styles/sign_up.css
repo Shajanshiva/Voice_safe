@@ -1,4 +1,3 @@
-/* Professional Auth Styles - Consistent with VoiceSafe Brand */
 
 .auth-page {
     background: linear-gradient(135deg, #8ba0e8 0%, #7689d6 100%);
@@ -22,7 +21,6 @@
     padding: 50px 40px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
     border-left: 8px solid #6366f1;
-    /* Signature 8px indigo border */
     text-align: left;
     margin-bottom: 25px;
 }
@@ -64,7 +62,6 @@
     font-size: 16px;
 }
 
-/* Form Styling */
 .form-group {
     margin-bottom: 24px;
 }
@@ -107,7 +104,6 @@
     box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
 }
 
-/* Button */
 .btn-auth {
     width: 100%;
     background-color: #6366f1;

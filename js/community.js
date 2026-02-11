@@ -14,11 +14,11 @@ function loadIssues() {
         return;
       }
 
-      // Reverse data to show latest posts first
+
       data.reverse().forEach(issue => {
         const storyDiv = document.createElement("div");
 
-        // Map category name to CSS class for gradient headers
+
         const category = issue.category_name ? issue.category_name.toLowerCase().replace(/\s+/g, '-') : 'default';
         const catClass = `cat-${category}`;
         storyDiv.className = `story ${catClass}`;

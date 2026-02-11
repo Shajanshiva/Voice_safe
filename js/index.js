@@ -1,4 +1,3 @@
-// Hero section buttons logic
 document.getElementById("postStoryBtn")?.addEventListener("click", () => {
   window.location.href = "./pages/post_issue.html";
 });

@@ -1,4 +1,4 @@
-/* Community Page Styles */
+
 
 .community-hero {
   background: linear-gradient(135deg, #8ba0e8 0%, #7689d6 100%);
@@ -30,7 +30,7 @@
   z-index: 10;
 }
 
-/* Call to Action Box - Floating Style */
+
 .report-box {
   background: white;
   border-radius: 20px;
@@ -79,15 +79,15 @@
   box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
 }
 
-/* Main Content Area */
+
 .community-main {
   padding-top: 200px;
-  /* Space for the overlapping hero cards */
+
   padding-bottom: 80px;
   background-color: #f8fafc;
 }
 
-/* Grid Layout for Stories */
+
 .stories {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
@@ -116,7 +116,7 @@
   transition: all 0.3s ease;
 }
 
-/* Base Category Colors for Headers - Compacted */
+
 .story.cat-harassment .story-header {
   background: linear-gradient(135deg, #ff4757, #ff6b7a);
 }
@@ -142,7 +142,7 @@
   background: linear-gradient(135deg, #8ba0e8, #7689d6);
 }
 
-/* Full Card Hover Effect - Outer Glow & Border Only */
+
 .story {
   border: 1.5px solid #e2e8f0;
 }

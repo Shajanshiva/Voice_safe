@@ -10,7 +10,7 @@ function createUser(event) {
   if (!username || !email || !password) {
     alert("Please fill all required fields");
     return;
-  }
+  } 
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {

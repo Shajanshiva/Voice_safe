@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    // Load Profile Data
+
     fetch(`${API_URL}/users/me/profile`, {
         headers: {
             "Authorization": `Bearer ${token}`
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(err => console.error(err));
 
-    // Load My Posts
+  
     fetch(`${API_URL}/issues/user/my-issues`, {
         headers: {
             "Authorization": `Bearer ${token}`
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const div = document.createElement("div");
                 div.className = "post-item-card";
 
-                // Assign a class based on category for coloring if needed
+               
                 const catClass = `cat-${issue.category_name.toLowerCase().replace(/\s+/g, '-')}`;
 
                 div.innerHTML = `
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(err => console.error(err));
 
-    // Update Profile
+   
     document.getElementById("editProfileForm").addEventListener("submit", (e) => {
         e.preventDefault();
         const fullName = document.getElementById("fullName").value;
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const updateData = {
             full_name: fullName,
             email: email,
-            password: password || null // Send null if empty
+            password: password || null
         };
 
         fetch(`${API_URL}/users/${userId}`, {
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.json())
             .then(data => {
                 alert(data.message || "Profile updated successfully!");
-                // Refresh name in header immediately
+               
                 document.getElementById("welcomeGreeting").innerText = `Welcome, ${fullName}!`;
             })
             .catch(err => alert("Update failed"));

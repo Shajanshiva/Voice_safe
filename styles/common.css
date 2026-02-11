@@ -1,4 +1,4 @@
-/* Common Header and Footer Styles from index.css */
+
 * {
     margin: 0;
     padding: 0;
@@ -114,7 +114,7 @@ body {
     background-color: #8ba0e8;
 }
 
-/* Mobile Menu Toggle */
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -133,7 +133,7 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Footer Styles */
+
 .footer {
     background-color: #1a1a1a;
     color: #ccc;
@@ -194,7 +194,7 @@ body {
     font-size: 14px;
 }
 
-/* Responsive Queries */
+
 @media (max-width: 992px) {
     .header-content {
         gap: 15px;
@@ -231,7 +231,7 @@ body {
 
     .header-actions {
         display: none;
-        /* Hide in mobile, show in side menu if needed */
+       
     }
 
     .nav .header-actions-mobile {
