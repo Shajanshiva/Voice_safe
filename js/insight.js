@@ -27,12 +27,12 @@ function loadCategoryInsightData() {
       const chartColors = [];
 
       const colorMap = {
-        "harassment": "#ff4757",
-        "bullying": "#ffa502",
-        "discrimination": "#3498db",
-        "favoritism": "#1abc9c",
-        "others": "#9b59b6",
-        "other": "#9b59b6"
+        harassment: "#ff4757",
+        bullying: "#ffa502",
+        discrimination: "#3498db",
+        favoritism: "#1abc9c",
+        others: "#9b59b6",
+        other: "#9b59b6",
       };
 
       categories.forEach(function (name) {
@@ -66,26 +66,28 @@ function loadCategoryInsightData() {
         type: "doughnut",
         data: {
           labels: chartLabels,
-          datasets: [{
-            data: chartValues,
-            backgroundColor: chartColors,
-            borderWidth: 0,
-            hoverOffset: 15
-          }]
+          datasets: [
+            {
+              data: chartValues,
+              backgroundColor: chartColors,
+              borderWidth: 0,
+              hoverOffset: 15,
+            },
+          ],
         },
         options: {
           responsive: true,
           maintainAspectRatio: false,
           cutout: "70%",
           layout: {
-            padding: 30
+            padding: 30,
           },
           plugins: {
             legend: {
-              position: "bottom"
-            }
-          }
-        }
+              position: "bottom",
+            },
+          },
+        },
       });
     })
     .catch(function (error) {
