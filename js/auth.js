@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     
 
-    
     if (token) {
         const profilePath = isSubfolder ? "profile.html" : "pages/profile.html";
         const postPath = isSubfolder ? "post_issue.html" : "pages/post_issue.html";
