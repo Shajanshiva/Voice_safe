@@ -23,10 +23,19 @@
           <a href="./pages/community.html" class="nav-link">Community</a>
           <a href="./pages/resources.html" class="nav-link">Resources</a>
           <a href="./pages/insight.html" class="nav-link">Insights</a>
+          <div class="header-actions-mobile">
+            <button class="btn-login" onclick="location.href='./pages/login.html'">Login</button>
+            <button class="btn-primary" onclick="location.href='./pages/post_issue.html'">Post Issue</button>
+          </div>
         </nav>
         <div class="header-actions">
           <button class="btn-login" id="loginBtn">Login</button>
           <button class="btn-primary" id="postIssueBtn">Post Issue</button>
+        </div>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </div>
@@ -44,7 +53,7 @@
 
           <div class="hero-buttons">
             <button class="btn-primary" id="postStoryBtn">
-              Post Your Story 
+              Post Your Story
             </button>
 
             <button class="btn-secondary" id="readStoriesBtn">
@@ -102,23 +111,23 @@
       <div class="categories-grid">
         <div class="category-card harassment">
           <span class="category-label">Harassment</span>
-        
+
         </div>
         <div class="category-card favoritism">
           <span class="category-label">Bullying</span>
-       
+
         </div>
         <div class="category-card gender-bias">
           <span class="category-label">Others</span>
-         
+
         </div>
         <div class="category-card inequality">
           <span class="category-label">Discrimination</span>
-        
+
         </div>
         <div class="category-card bullying">
           <span class="category-label">Favoritism</span>
-        
+
         </div>
       </div>
     </div>
@@ -134,7 +143,7 @@
         Latest anonymous reports from the community
       </p>
       <div class="reports-grid">
-     
+
         <div class="report-card">
           <div class="report-header">
             <span class="report-category favoritism">Favoritism</span>
@@ -228,6 +237,7 @@
     </div>
   </footer>
   <script src="./js/constant.js"></script>
+  <script src="./js/common.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/auth.js"></script>
 </body>
