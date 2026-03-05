@@ -1,238 +1,316 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoiceSafe – Support Resources</title>
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/resources.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VoiceSafe – Support Resources</title>
-  <link rel="stylesheet" href="../styles/common.css" />
-  <link rel="stylesheet" href="../styles/resources.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header-content">
-        <a href="../index.html" class="logo">
-          <span class="logo-icon">🛡️</span>
-          <span class="logo-text">VoiceSafe</span>
-        </a>
-        <nav class="nav">
-          <a href="../index.html" class="nav-link">Home</a>
-          <a href="../pages/post_issue.html" class="nav-link">Post Issue</a>
-          <a href="../pages/community.html" class="nav-link">Community</a>
-          <a href="../pages/resources.html" class="nav-link active">Resources</a>
-          <a href="../pages/insight.html" class="nav-link">Insights</a>
-          <div class="header-actions-mobile">
-            <button class="btn-login" onclick="location.href='../pages/login.html'">Login</button>
-            <button class="btn-primary" onclick="location.href='../pages/post_issue.html'">Post Issue</button>
-          </div>
-        </nav>
-        <div class="header-actions">
-          <button class="btn-login" id="loginBtn">Login</button>
-          <button class="btn-primary" id="postIssueBtn">Post Issue</button>
-        </div>
-        <div class="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <section class="resource-hero">
-    <div class="container">
-      <h1>Support Resources</h1>
-      <p>Access professional help, legal guidance, and support services for workplace issues</p>
-    </div>
-    <div class="privacy-overlay">
-      <div class="privacy-card">
-        <div class="privacy-icon">🔒</div>
-        <div class="privacy-text">
-          <h3>Your Privacy is Protected:</h3>
-          <p>All reports are completely safe. We do not collect IP addresses, personal information, or any identifying
-            data.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <main class="container">
-
-    <section class="resource-section">
-      <h2>Emergency Helplines</h2>
-      <div class="helpline-grid">
-        <div class="helpline-card women">
-          <span class="card-tag tag-red">Emergency</span>
-          <h3>National Women Helpline</h3>
-          <span class="helpline-number">1091</span>
-          <p>24/7 support for women facing harassment or violence. Immediate assistance available in multiple languages.
-          </p>
-        </div>
-
-        <div class="helpline-card police">
-          <span class="card-tag tag-red">Emergency</span>
-          <h3>Police Emergency</h3>
-          <span class="helpline-number">100</span>
-          <p>Immediate police assistance for serious threats. Available 24/7 for urgent situations requiring law
-            enforcement.</p>
-        </div>
-
-        <div class="helpline-card workplace">
-          <span class="card-tag tag-blue">Workplace</span>
-          <h3>HR Grievance Cell</h3>
-          <span class="helpline-number">1800-XXX-XXXX</span>
-          <p>Report workplace issues to dedicated HR support. Confidential assistance for workplace-related concerns.
-          </p>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="resource-section">
-      <h2>Know Your Legal Rights</h2>
-      <p class="section-subtitle">Understanding the laws that protect you in the workplace</p>
-
-      <div class="legal-rights-list">
-        <div class="legal-card">
-          <h3>Sexual Harassment of Women at Workplace Act, 2013</h3>
-          <p>Comprehensive law protecting women from sexual harassment at workplace. This act ensures safe working
-            environment and provides mechanism for redressal.</p>
-          <ul class="legal-points">
-            <li><span class="check-icon">✓</span> Every workplace must have an Internal Committee (IC)</li>
-            <li><span class="check-icon">✓</span> Complaints can be filed within 3 months</li>
-            <li><span class="check-icon">✓</span> Employers must ensure safety and take preventive measures</li>
-            <li><span class="check-icon">✓</span> Strict penalties for non-compliance and retaliation</li>
-          </ul>
-          <div class="legal-card-footer">
-            <a href="https://wcd.delhi.gov.in/wcd/sexual-harassment-women-workplaceprevention-prohibition-and-redressal-act-2013sh-act-2013"
-              target="_blank" class="learn-more-btn">Learn More →</a>
-          </div>
-        </div>
-
-        <div class="legal-card">
-          <h3>Equal Remuneration Act, 1976</h3>
-          <p>Ensures equal pay for equal work regardless of gender. Prohibits discrimination in recruitment and service
-            conditions.</p>
-          <ul class="legal-points">
-            <li><span class="check-icon">✓</span> Equal pay for men and women doing same work</li>
-            <li><span class="check-icon">✓</span> No discrimination in recruitment based on gender</li>
-            <li><span class="check-icon">✓</span> Applies to all establishments with 20 or more employees</li>
-            <li><span class="check-icon">✓</span> Penalties for violations include fines and imprisonment</li>
-          </ul>
-          <div class="legal-card-footer">
-            <a href="https://labour.gov.in/equal-remuneration-act-1976" target="_blank" class="learn-more-btn">Learn
-              More
-              →</a>
-          </div>
-        </div>
-
-        <div class="legal-card">
-          <h3>Maternity Benefit Act, 1961</h3>
-          <p>Regulates employment of women during maternity and provides benefits. Ensures job protection and paid leave
-            for new mothers.</p>
-          <ul class="legal-points">
-            <li><span class="check-icon">✓</span> 26 weeks of paid maternity leave</li>
-            <li><span class="check-icon">✓</span> Work-from-home options for new mothers</li>
-            <li><span class="check-icon">✓</span> Crèche facilities for establishments with 50+ employees</li>
-            <li><span class="check-icon">✓</span> Protection from dismissal during maternity leave</li>
-          </ul>
-          <div class="legal-card-footer">
-            <a href="https://labour.gov.in/maternity-benefit-act-1961" target="_blank" class="learn-more-btn">Learn More
-              →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="resource-section">
-      <h2>Additional Resources</h2>
-      <p class="section-subtitle">More support and information to help you</p>
-
-      <div class="additional-grid">
-        <div class="resource-card">
-          <div class="resource-icon-box">📚</div>
-          <h4>Legal Guidance</h4>
-          <p>Access free legal consultation and understand your rights under workplace laws.</p>
-          <a href="#" class="resource-link">Learn More →</a>
-        </div>
-
-        <div class="resource-card">
-          <div class="resource-icon-box">💬</div>
-          <h4>Counseling Services</h4>
-          <p>Professional mental health support and counseling for workplace trauma.</p>
-          <a href="#" class="resource-link">Get Support →</a>
-        </div>
-
-        <div class="resource-card">
-          <div class="resource-icon-box">🎓</div>
-          <h4>Training Programs</h4>
-          <p>Educational resources on workplace rights, safety, and professional development.</p>
-          <a href="#" class="resource-link">Explore →</a>
-        </div>
-
-        <div class="resource-card">
-          <div class="resource-icon-box">👥</div>
-          <h4>Support Groups</h4>
-          <p>Connect with others who have faced similar workplace challenges.</p>
-          <a href="../pages/community.html" class="resource-link">Join Community →</a>
-        </div>
-      </div>
-    </section>
-
-
-    <div class="cta-banner">
-      <h2>Need Immediate Help?</h2>
-      <p>If you're facing a workplace issue and need to report it safely and anonymously, we're here to help.</p>
-      <a href="../pages/post_issue.html" class="btn-cta">Report an Issue</a>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-section">
-          <div class="footer-logo">
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="../index.html" class="logo">
             <span class="logo-icon">🛡️</span>
-            <span>VoiceSafe</span>
+            <span class="logo-text">VoiceSafe</span>
+          </a>
+          <nav class="nav">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../pages/post_issue.html" class="nav-link">Post Issue</a>
+            <a href="../pages/community.html" class="nav-link">Community</a>
+            <a href="../pages/resources.html" class="nav-link active"
+              >Resources</a
+            >
+            <a href="../pages/insight.html" class="nav-link">Insights</a>
+          </nav>
+          <div class="header-actions">
+            <button class="btn-login" id="loginBtn">Login</button>
+            <button class="btn-primary" id="postIssueBtn">Post Issue</button>
           </div>
-          <p>Empowering safe workplace reporting for a better tomorrow.</p>
-        </div>
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/post_issue.html">Post Issue</a></li>
-            <li><a href="../pages/community.html">Community</a></li>
-            <li><a href="../pages/resources.html">Resources</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Support</h4>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Legal Help</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Emergency Support</h4>
-          <p><strong>Women Helpline:</strong><br />1091</p>
-          <p><strong>HR Grievance:</strong><br />1800-XXX-XXXX</p>
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 VoiceSafe. All rights reserved. | Built for safer workplaces.</p>
-      </div>
-    </div>
-  </footer>
-  <script src="../js/constant.js"></script>
-  <script src="../js/common.js"></script>
-  <script src="../js/resources.js"></script>
-  <script src="../js/auth.js"></script>
-</body>
+    </header>
 
+    <section class="resource-hero">
+      <div class="container">
+        <h1>Support Resources</h1>
+        <p>
+          Access professional help, legal guidance, and support services for
+          workplace issues
+        </p>
+      </div>
+      <div class="privacy-overlay">
+        <div class="privacy-card">
+          <div class="privacy-icon">🔒</div>
+          <div class="privacy-text">
+            <h3>Your Privacy is Protected:</h3>
+            <p>
+              All reports are completely safe. We do not collect IP addresses,
+              personal information, or any identifying data.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="resource-section">
+        <h2>Emergency Helplines</h2>
+        <div class="helpline-grid">
+          <div class="helpline-card women">
+            <span class="card-tag tag-red">Emergency</span>
+            <h3>National Women Helpline</h3>
+            <span class="helpline-number">1091</span>
+            <p>
+              24/7 support for women facing harassment or violence. Immediate
+              assistance available in multiple languages.
+            </p>
+          </div>
+
+          <div class="helpline-card police">
+            <span class="card-tag tag-red">Emergency</span>
+            <h3>Police Emergency</h3>
+            <span class="helpline-number">100</span>
+            <p>
+              Immediate police assistance for serious threats. Available 24/7
+              for urgent situations requiring law enforcement.
+            </p>
+          </div>
+
+          <div class="helpline-card workplace">
+            <span class="card-tag tag-blue">Workplace</span>
+            <h3>HR Grievance Cell</h3>
+            <span class="helpline-number">1800-XXX-XXXX</span>
+            <p>
+              Report workplace issues to dedicated HR support. Confidential
+              assistance for workplace-related concerns.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="resource-section">
+        <h2>Know Your Legal Rights</h2>
+        <p class="section-subtitle">
+          Understanding the laws that protect you in the workplace
+        </p>
+
+        <div class="legal-rights-list">
+          <div class="legal-card">
+            <h3>Sexual Harassment of Women at Workplace Act, 2013</h3>
+            <p>
+              Comprehensive law protecting women from sexual harassment at
+              workplace. This act ensures safe working environment and provides
+              mechanism for redressal.
+            </p>
+            <ul class="legal-points">
+              <li>
+                <span class="check-icon">✓</span> Every workplace must have an
+                Internal Committee (IC)
+              </li>
+              <li>
+                <span class="check-icon">✓</span> Complaints can be filed within
+                3 months
+              </li>
+              <li>
+                <span class="check-icon">✓</span> Employers must ensure safety
+                and take preventive measures
+              </li>
+              <li>
+                <span class="check-icon">✓</span> Strict penalties for
+                non-compliance and retaliation
+              </li>
+            </ul>
+            <div class="legal-card-footer">
+              <a
+                href="https://wcd.delhi.gov.in/wcd/sexual-harassment-women-workplaceprevention-prohibition-and-redressal-act-2013sh-act-2013"
+                target="_blank"
+                class="learn-more-btn"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+
+          <div class="legal-card">
+            <h3>Equal Remuneration Act, 1976</h3>
+            <p>
+              Ensures equal pay for equal work regardless of gender. Prohibits
+              discrimination in recruitment and service conditions.
+            </p>
+            <ul class="legal-points">
+              <li>
+                <span class="check-icon">✓</span> Equal pay for men and women
+                doing same work
+              </li>
+              <li>
+                <span class="check-icon">✓</span> No discrimination in
+                recruitment based on gender
+              </li>
+              <li>
+                <span class="check-icon">✓</span> Applies to all establishments
+                with 20 or more employees
+              </li>
+              <li>
+                <span class="check-icon">✓</span> Penalties for violations
+                include fines and imprisonment
+              </li>
+            </ul>
+            <div class="legal-card-footer">
+              <a
+                href="https://labour.gov.in/equal-remuneration-act-1976"
+                target="_blank"
+                class="learn-more-btn"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+
+          <div class="legal-card">
+            <h3>Maternity Benefit Act, 1961</h3>
+            <p>
+              Regulates employment of women during maternity and provides
+              benefits. Ensures job protection and paid leave for new mothers.
+            </p>
+            <ul class="legal-points">
+              <li>
+                <span class="check-icon">✓</span> 26 weeks of paid maternity
+                leave
+              </li>
+              <li>
+                <span class="check-icon">✓</span> Work-from-home options for new
+                mothers
+              </li>
+              <li>
+                <span class="check-icon">✓</span> Crèche facilities for
+                establishments with 50+ employees
+              </li>
+              <li>
+                <span class="check-icon">✓</span> Protection from dismissal
+                during maternity leave
+              </li>
+            </ul>
+            <div class="legal-card-footer">
+              <a
+                href="https://labour.gov.in/maternity-benefit-act-1961"
+                target="_blank"
+                class="learn-more-btn"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resource-section">
+        <h2>Additional Resources</h2>
+        <p class="section-subtitle">More support and information to help you</p>
+
+        <div class="additional-grid">
+          <div class="resource-card">
+            <div class="resource-icon-box">📚</div>
+            <h4>Legal Guidance</h4>
+            <p>
+              Access free legal consultation and understand your rights under
+              workplace laws.
+            </p>
+            <a href="#" class="resource-link">Learn More →</a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon-box">💬</div>
+            <h4>Counseling Services</h4>
+            <p>
+              Professional mental health support and counseling for workplace
+              trauma.
+            </p>
+            <a href="#" class="resource-link">Get Support →</a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon-box">🎓</div>
+            <h4>Training Programs</h4>
+            <p>
+              Educational resources on workplace rights, safety, and
+              professional development.
+            </p>
+            <a href="#" class="resource-link">Explore →</a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon-box">👥</div>
+            <h4>Support Groups</h4>
+            <p>
+              Connect with others who have faced similar workplace challenges.
+            </p>
+            <a href="../pages/community.html" class="resource-link"
+              >Join Community →</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <div class="cta-banner">
+        <h2>Need Immediate Help?</h2>
+        <p>
+          If you're facing a workplace issue and need to report it safely and
+          anonymously, we're here to help.
+        </p>
+        <a href="../pages/post_issue.html" class="btn-cta">Report an Issue</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <span class="logo-icon">🛡️</span>
+              <span>VoiceSafe</span>
+            </div>
+            <p>Empowering safe workplace reporting for a better tomorrow.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../pages/post_issue.html">Post Issue</a></li>
+              <li><a href="../pages/community.html">Community</a></li>
+              <li><a href="../pages/resources.html">Resources</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Legal Help</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Emergency Support</h4>
+            <p><strong>Women Helpline:</strong><br />1091</p>
+            <p><strong>HR Grievance:</strong><br />1800-XXX-XXXX</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 VoiceSafe. All rights reserved. | Built for safer
+            workplaces.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/constant.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/resources.js"></script>
+    <script src="../js/auth.js"></script>
+  </body>
 </html>
