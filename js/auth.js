@@ -12,12 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = isSubfolder ? "login.html" : "pages/login.html";
         }
     };
+    
 
     if (token) {
         const profilePath = isSubfolder ? "profile.html" : "pages/profile.html";
         const postPath = isSubfolder ? "post_issue.html" : "pages/post_issue.html";
 
-        
+
         if (authActions) {
             authActions.innerHTML = `
                 <a href="${profilePath}" class="nav-link" id="profileLink" style="margin-right: 15px;">Profile</a>
