@@ -1,6 +1,6 @@
 document.querySelector(".login-btn").addEventListener("click", createUser);
 
-function createUser(event) {
+async function createUser(event) {
   if (event) event.preventDefault();
 
   const username = document.getElementById("username").value;
@@ -10,7 +10,7 @@ function createUser(event) {
   if (!username || !email || !password) {
     alert("Please fill all required fields");
     return;
-  } 
+  }
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
@@ -24,19 +24,25 @@ function createUser(event) {
     password: password,
   };
 
-  fetch(`${API_URL}/users/`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(user_data),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      alert("User " + username + " created successfully!");
-      window.location.href = "./login.html";
-    })
-    .catch((error) => {
-      alert("Error creating user.");
+  try {
+    const response = await fetch(`${API_URL}/users/`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(user_data),
     });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      alert(data.detail || "Error creating user.");
+      return;
+    }
+
+    alert("User " + username + " created successfully!");
+    window.location.href = "./login.html";
+  } catch (error) {
+    alert("Error creating user.");
+  }
 }
