@@ -18,7 +18,7 @@ async function verify_user(event) {
     };
 
     try {
-        
+
         const response = await fetch(`${API_URL}/users/login`, {
             method: "POST",
             headers: {
@@ -26,19 +26,20 @@ async function verify_user(event) {
             },
             body: JSON.stringify(loginData)
         });
-    
+
         const data = await response.json();
-    
-                if (!response.ok) {
-                    throw new Error(data.detail || "Invalid email or password");
-                } 
-                alert("Login successful!");
-    
-                localStorage.setItem("access_token", data.access_token);
-                window.location.href = "../index.html";
-              
+
+        if (!response.ok) {
+            throw new Error(data.detail || "Invalid email or password");
+        }
+        alert("Login successful!");
+
+        localStorage.setItem("access_token", data.access_token);
+        localStorage.setItem("user_id", data.user_id);
+        window.location.href = "../index.html";
+
     }
-        catch(error)  {
-            alert(error.message);
-        };
+    catch (error) {
+        alert(error.message);
+    };
 }
